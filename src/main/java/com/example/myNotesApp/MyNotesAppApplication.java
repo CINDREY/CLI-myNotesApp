@@ -5,6 +5,8 @@ import com.example.service.NotesServiceImpl;
 import com.example.service.Service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.cli.CommandHandler;
+
 
 @SpringBootApplication
 public class MyNotesAppApplication {
@@ -32,6 +34,10 @@ public class MyNotesAppApplication {
 
 	// Cerrar la base de datos
         ((NotesServiceImpl)service).close();
+
+
+        CommandHandler commandHandler = new CommandHandler();
+        commandHandler.start();
 
 
 	}
