@@ -1,23 +1,38 @@
 # CLI-myNotesApp
 Una aplicación de gestión de tareas utilizando MapDB.
+# My Notes CLI App
+My Notes CLI App es una aplicación de línea de comandos para gestionar notas. Permite crear, actualizar, eliminar y listar notas.
 
 ## Requisitos
 - Java 8 o superior
-- Maven
+- Maven 3.6.0 o superior
 
-## Instrucciones para Ejecutar
-1. Clonar el repositorio
-2. Navega al directorio del proyecto:cd my-notes-app
-3. Compila el proyecto: mvn clean install
-4. Ejecuta la aplicación:mvn exec
--Dexec.mainClass="com.example.myNotesApp.main"
+## Instalación
+1. Clonar el repositorio:
+    ```sh
+    git clone https://github.com/usuario/my-notes-app.git
+    ```
+
+2. Navegar al directorio del proyecto:
+    ```sh
+    cd my-notes-app
+    ```
+
+3. Compilar el proyecto usando Maven:
+    ```sh
+    mvn clean install
+    ```
+
+## Ejecución
+Para ejecutar la aplicación, usa el siguiente comando:
+```sh
+mvn spring-boot:run
 
 
-## Instrucciones para Ejecutar las Pruebas
-1. Ejecuta las pruebas: mvn test
 
 
 ## Estructura del Proyecto
+- `com.example.cli`: línea de comandos CLI. 
 - `com.example.config`: Configuración de la base de datos.
 - `com.example.model`: Clases del modelo.
 - `com.example.service`: Interfaces y clases de servicio.
@@ -26,10 +41,15 @@ Una aplicación de gestión de tareas utilizando MapDB.
 - `src/test/java`: Pruebas unitarias.
 
 
-## Scripts para la Configuración del Proyecto
-Asegurarse de tener Maven instalado y configurado en la máquina. Los comandos clave son:
-- Compilar el proyecto: mvn clean install
-- Ejecutar la aplicación: mvn exec:java -Dexec.mainClass="com.example.myNotesApp"
-- Ejecutar las pruebas: mvn test
 
-- Rezar a jesusito :D
+## Comandos
+- create <note_message>: Crea una nueva nota con el mensaje especificado.
+- getAll: Obtiene todas las notas.
+- getById <note_id>: Obtiene una nota por su ID.
+- update <note_id> <new_message>: Actualiza el mensaje de la nota con el ID especificado.
+- delete <note_id>: Elimina la nota con el ID especificado.
+- help: Muestra los comandos disponibles.
+- exit: Cierra la aplicación.
+
+
+Disfruta usando My Notes CLI App y Reza a jesusito :D
