@@ -1,6 +1,6 @@
 # CLI-myNotesApp
 Gestión de tareas utilizando MapDB.
-My Notes CLI App es una aplicación de línea de comandos para gestionar notas. Permite crear, actualizar, eliminar y listar notas.
+My Notes CLI App es una aplicación de línea de comandos para gestionar notas utilizando Picocli. Permite crear, actualizar, eliminar y listar notas.
 
 ## Requisitos
 - Java 8 o superior
