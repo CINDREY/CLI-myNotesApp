@@ -28,8 +28,8 @@ Una aplicación de gestión de tareas utilizando MapDB.
 
 ## Scripts para la Configuración del Proyecto
 Asegurarse de tener Maven instalado y configurado en la máquina. Los comandos clave son:
-*Compilar el proyecto: mvn clean install
-*Ejecutar la aplicación: mvn exec:java -Dexec.mainClass="com.example.myNotesApp"
-*Ejecutar las pruebas: mvn test
+- Compilar el proyecto: mvn clean install
+- Ejecutar la aplicación: mvn exec:java -Dexec.mainClass="com.example.myNotesApp"
+- Ejecutar las pruebas: mvn test
 
-*Rezar a jesusito :D
+- Rezar a jesusito :D
